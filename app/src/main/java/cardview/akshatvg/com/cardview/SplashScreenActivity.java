@@ -1,4 +1,4 @@
-package com.akshatvg.cardview_recyclerview_splashscreen;
+package com.akshatvg.cardviewRecyclerviewSplashscreen;
 
 import android.app.Activity;
 import android.content.Intent;
