@@ -11,12 +11,13 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.activity_my);
+        //setContentView(R.layout.activity_my);
 
         setContentView(R.layout.activity_main);
         RecyclerView recList = (RecyclerView) findViewById(R.id.cardList);
@@ -25,9 +26,10 @@ public class MainActivity extends Activity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recList.setLayoutManager(llm);
 
-        ContactAdapter ca = new ContactAdapter(createList(30));
+        ContactAdapter ca = new ContactAdapter(createList(10));
         recList.setAdapter(ca);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -48,10 +50,12 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
+
+
     private List<ContactInfo> createList(int size) {
 
         List<ContactInfo> result = new ArrayList<ContactInfo>();
-        for (int i = 1; i <= size; i++) {
+        for (int i=1; i <= size; i++) {
             ContactInfo ci = new ContactInfo();
             ci.name = ContactInfo.NAME_PREFIX + i;
             ci.surname = ContactInfo.SURNAME_PREFIX + i;

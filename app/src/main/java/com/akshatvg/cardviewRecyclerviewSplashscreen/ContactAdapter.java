@@ -30,7 +30,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
     @Override
     public void onBindViewHolder(ContactViewHolder contactViewHolder, int i) {
         ContactInfo ci = contactList.get(i);
-        contactViewHolder.vName.setImageResource(R.drawable.user2);
+        contactViewHolder.vName.setImageResource(R.drawable.nishi);
         contactViewHolder.vSurname.setText(ci.surname);
         contactViewHolder.vEmail.setText(ci.email);
         contactViewHolder.vTitle.setText("  "+ci.surname);

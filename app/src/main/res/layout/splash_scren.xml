@@ -2,23 +2,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A7A7A7"
+    android:background="#759C27B0"
     tools:context=".SplashScreenActivity">
 
     <ImageView
-        android:layout_width="352dp"
-        android:layout_height="237dp"
+        android:layout_width="334dp"
+        android:layout_height="395dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
 
         android:layout_alignParentTop="true"
-        android:layout_marginStart="27dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="255dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="244dp"
         android:background="#B3B3B3"
         android:contentDescription="@string/app_name"
         android:scaleType="fitXY"
-        android:src="@drawable/splash_screen" />
+        android:src="@drawable/nishi" />
 
     <TextView
         android:id="@+id/textView"
@@ -31,7 +31,7 @@
         android:rotationX="-360"
         android:rotationY="-360"
         android:scrollHorizontally="false"
-        android:text="Splash Screen"
+        android:text="App Loading..."
         android:textColor="#FFFFFF"
         android:textSize="34sp"
         android:textStyle="bold|italic"
