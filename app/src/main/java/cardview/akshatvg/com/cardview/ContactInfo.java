@@ -1,8 +1,5 @@
 package com.akshatvg.cardview_recyclerview_splashscreen;
 
-/**
- * Created by Sachi Reddy on 3/29/2015.
- */
 public class ContactInfo {
     protected String name;
     protected String surname;
