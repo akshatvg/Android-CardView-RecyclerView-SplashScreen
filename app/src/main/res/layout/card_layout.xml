@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:padding="3dip">
+
+            <ImageView
+                android:id="@+id/txtName"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Name"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#4CAF50"
+            android:gravity="center_vertical"
+            android:text="contact det"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/thumbnail"
+            android:layout_alignTop="@+id/thumbnail"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="FullName"
+            android:textColor="#000000"
+            android:textSize="15dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSurname"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:gravity="center_vertical"
+            android:text="Surname"
+
+            android:textColor="#B0000000"
+
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/txtAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="Address Goes Here"
+            android:textColor="#EE000000"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,2 @@
+rootProject.name = "CardView-RecyclerView-SplashScreen"
+include ':app'
